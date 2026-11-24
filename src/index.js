@@ -26,19 +26,20 @@ function page({ title, eyebrow, message, code, status = 200, cheese = false }) {
 <meta name="theme-color" content="#101010">
 <title>${escapeHtml(heading)} | Theegget Errors</title>
 <style>
-:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#101010;color:#f5f5f5}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 50% 0,#252525 0,transparent 55%),#101010}
-main{width:min(100%,620px);text-align:center;padding:48px 28px;border:1px solid #303030;border-radius:22px;background:#171717;box-shadow:0 24px 80px #0008}
-.brand{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#aaa;font-weight:700}
-.eyebrow{margin-top:42px;color:#aaa;font-size:12px;letter-spacing:.18em;font-weight:700}
-.code{font-size:clamp(56px,14vw,92px);line-height:1;font-weight:800;letter-spacing:-.07em;margin:16px 0;color:#fff}
-h1{font-size:clamp(30px,7vw,48px);margin:16px 0 12px;letter-spacing:-.04em}
-p{color:#c3c3c3;font-size:16px;line-height:1.7;margin:0 auto;max-width:440px}
-.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:34px}
-a{color:#111;background:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:10px}
-a.secondary{background:#292929;color:#eee;border:1px solid #444}
-.foot{margin-top:38px;color:#777;font-size:12px}
-.cheese{font-size:42px;margin-top:20px}
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#14243a;color:#f7f8fb}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(135deg,#101d30 0%,#1b2d45 52%,#263c58 100%)}
+main{width:min(100%,456px);text-align:center;padding:36px 28px 30px;border:1px solid rgba(190,207,225,.58);border-radius:20px;background:rgba(15,27,43,.16);box-shadow:0 12px 36px rgba(0,0,0,.12)}
+.brand{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#f0f2f6;font-weight:800}
+.eyebrow{margin-top:30px;color:#e2e7ee;font-size:10px;letter-spacing:.12em;font-weight:800}
+.code{font-size:68px;line-height:1;font-weight:850;letter-spacing:-.065em;margin:14px 0 18px;color:#fff}
+h1{font-size:32px;line-height:1.12;margin:14px 0 12px;letter-spacing:-.045em;color:#fff}
+p{color:#e0e5ec;font-size:12px;line-height:1.65;margin:0 auto;max-width:340px}
+.actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:22px}
+a{color:#17263a;background:#f5f6f8;text-decoration:none;font-size:11px;font-weight:750;padding:11px 15px;border-radius:9px}
+a.secondary{background:rgba(219,229,240,.16);color:#f5f7fa;border:1px solid rgba(208,220,233,.48)}
+.foot{margin-top:25px;color:#d4dce6;font-size:10px}
+.cheese{font-size:42px;margin-top:16px}
 </style>
 </head>
 <body><main>
