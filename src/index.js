@@ -52,7 +52,7 @@ ${statusLine}
 <div class="foot">Theegget Creations™</div>
 </main></body></html>`, {
     status,
-    headers: { "content-type": "text/html; charset=UTF-8", "cache-control": "no-store", "x-content-type-options": "nosniff" }
+    headers: { "content-type": "text/html; charset=UTF-8", "cache-control": "no-store", "x-content-type-options": "nosniff", "x-tc-error-service": "TCErrorPages" }
   });
 }
 
@@ -65,7 +65,7 @@ function escapeHtml(value) {
 export default {
   async fetch(request) {
     const url = new URL(request.url);
-    if (request.method !== "GET" && request.method !== "HEAD") {
+    if (url.pathname === "/health") {\n      return Response.json({ service: "TCErrorPages", status: "ok" }, { headers: { "cache-control": "no-store", "x-tc-error-service": "TCErrorPages" } });\n    }\n\n    if (request.method !== "GET" && request.method !== "HEAD") {
       return new Response("Method Not Allowed", { status: 405, headers: { allow: "GET, HEAD" } });
     }
 
